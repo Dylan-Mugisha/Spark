@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.main{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(to right,#1f3180,#1f262c,#1f262c);
+
+}
+.header{
+    margin: 2rem 5rem ;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+
+}
+.logo{
+    z-index: 100;
+}
+.header ul{
+    display: flex;
+    font-size: 16px;
+    list-style: none;
+    
+    
+}
+.header ul li{
+    padding: 0 2rem;
+
+}
+.header ul a{
+    text-decoration: none;
+    color: inherit;
+    transition: 1s;
+}
+.header a:hover{
+    border-bottom: #fff solid 1px;
+}
+.infos{
+    position: absolute;
+    height: 1000px;
+    width: 1000px;
+    top: 50%;
+    left: -10%;
+    transform: translateY(-50%);
+
+}
+#circle{
+    position: absolute;
+    height: 1000px;
+    width: 1000px;
+    top: 0%;
+    left: 0%;
+    border-radius: 50%;
+    transform: rotate(0deg);
+    transition: 1s;
+}
+.features img{
+   width: 70px;
+}
+.features{
+    position: absolute;
+    display: flex;
+    gap: 1rem;
+    color: white;
+}
+.one{
+    top: 450px;
+    right: 50px;
+}
+.two{
+    top: 150px;
+    left: 350px;
+    transform: rotate(270deg);
+
+}
+.three{
+    top: 450px;
+    left: 50px;
+    transform: rotate(180deg);
+
+}
+.four{
+    bottom: 150px;
+    right: 350px;
+    transform: rotate(90deg);
+
+}
+.features div{
+    align-self: center;
+    line-height: 1.5;
+}
+.mobile{
+    position: absolute;
+    z-index: 1;
+    width: 200px;
+    top: 50%;
+    left: 35%;
+    transform: translateY(-50%);
+}
+.controls{
+    position: absolute;
+    right: -40%;
+    top: 50%;
+    transform: translateY(-50%);
+    line-height: 2;
+    text-align: center;
+    color: #fff;
+    cursor: pointer;
+
+}
+.controls img{
+    width: 15px;
+}
+#downbtn{
+    transform: rotate(180deg);
+}
+.overlay{
+    width: 0;
+    height: 0;
+    border-top: 500px solid #fff;
+    border-bottom: 500px solid #fff;
+    border-left: 500px solid #fff;
+    border-right: 500px solid transparent;
+    position: absolute;
+    top: 0;
+    left: 0;
+}

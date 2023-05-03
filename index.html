@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>my-version</title>
+</head>
+<body>
+    <div class="main">
+        <div class="header">
+        <div class="logo">
+            <img src="images/spark-text.png" alt="tecno logo">
+        </div>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Phone</a></li>
+                <li><a href="#">Accessories</a></li>
+                <li><a href="#">Cart</a></li>
+            </ul>
+    </div>
+<div class="infos">
+    <img src="images/backPhoneAD8.jpg" alt="" class="mobile">
+    <div class="overlay"></div>
+    <div id="circle">
+        <div class="features one">
+            <img src="images/camera.png" alt="">
+            <div>
+                <h1>Camera</h1>
+                <p>50 MP, f/1.5, 65mm (telephoto)</p>
+            </div>
+        </div>
+        <div class="features two">
+            <img src="images/processor.png" alt="">
+            <div>
+                <h1>Processor</h1>
+                <p>Android 12, HIOS 12</p>
+            </div>
+        </div>
+        <div class="features three">
+            <img src="images/display.png" alt="">
+            <div>
+                <h1>display</h1>
+                <p>6.8 inches, 111.6 cm <sup>2</sup></p>
+            </div>
+        </div>
+        <div class="features four">
+            <img src="images/battery.png" alt="">
+            <div>
+                <h1>Battery</h1>
+                <p>45W wired, 54% in 20 min</p>
+            </div>
+        </div>
+    </div>
+    <div class="controls">
+        <img src="images/arrow.png" alt="" id="upbtn">
+        <h3>features</h3>
+        <img src="images/arrow.png" alt="" id="downbtn">
+    </div>
+</div>
+</div>
+    <script>
+     let circle = document.getElementById('circle')
+     let upbtn = document.getElementById('upbtn')
+     let downbtn = document.getElementById('downbtn')
+
+     let rotateValue= circle.style.transform;
+     let rotateSum;
+
+     upbtn.onclick=function(){
+        rotateSum=rotateValue+'rotate(-90deg)';
+        circle.style.transform=rotateSum
+        rotateValue=rotateSum
+     }
+     downbtn.onclick=function(){
+        rotateSum=rotateValue+'rotate(90deg)';
+        circle.style.transform=rotateSum
+        rotateValue=rotateSum
+     }
+
+    </script>
+</body>
+</html>
